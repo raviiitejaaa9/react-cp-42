@@ -1,0 +1,42 @@
+/* Write your CSS here */
+
+.navbar {
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid black 1.5px;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-dark {
+  background-color: #1d1c1cd0;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0px 0px 10px 10px;
+  text-decoration: none;
+}
+
+.font-blue {
+  color: #2323a8;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.nav-image {
+  width: 80px;
+  height: 80px;
+}
