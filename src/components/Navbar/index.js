@@ -1,9 +1,11 @@
 // Write your code here
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import ThemeContext from '../../context/ThemeContext'
 import './index.css'
 
 const Navbar = () => {
+  const history = useHistory()
+
   const lightTheme = {
     bgColor: 'bg-white',
     logo:
@@ -18,6 +20,10 @@ const Navbar = () => {
       'https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png',
     themeImage: 'https://assets.ccbp.in/frontend/react-js/light-theme-img.png',
     fontColor: 'font-white',
+  }
+
+  const onClickLogo = () => {
+    history.replace('/')
   }
 
   return (
@@ -35,17 +41,18 @@ const Navbar = () => {
           <div className={`navbar ${theme.bgColor}`}>
             <img
               src={theme.logo}
-              alt="nav logo"
-              className="nav-logo nav-image "
+              alt="website logo"
+              className="nav-logo nav-image"
+              onClick={onClickLogo}
             />
-            <div className="nav-links-container">
+            <ul className="nav-links-container">
               <Link to="/" className={`nav-link ${theme.fontColor}`}>
-                <h1> Home </h1>
+                <li> Home </li>
               </Link>
               <Link to="/about" className={`nav-link ${theme.fontColor}`}>
-                <h1> About </h1>
+                <li> About </li>
               </Link>
-            </div>
+            </ul>
             <img
               src={theme.themeImage}
               alt="theme-change-icon"

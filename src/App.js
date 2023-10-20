@@ -10,7 +10,7 @@ import NotFound from './components/NotFound'
 
 import ThemeContext from './context/ThemeContext'
 
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 
 import './App.css'
 
@@ -30,7 +30,9 @@ class App extends Component {
         value={{isDarkTheme, toggleTheme: this.toggleTheme}}
       >
         <Switch>
-          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route component={NotFound} />
         </Switch>
       </ThemeContext.Provider>
     )

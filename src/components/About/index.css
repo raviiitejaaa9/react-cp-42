@@ -1,1 +1,32 @@
 /* Write your CSS here */
+
+.home-sec {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-light {
+  background-color: white;
+}
+
+.home-dark {
+  background-color: black;
+}
+
+.home {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.font-black {
+  color: black;
+}
+
+.font-white {
+  color: white;
+}
