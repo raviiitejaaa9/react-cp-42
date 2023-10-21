@@ -1,5 +1,4 @@
 // Write your code here
-// Write your code here
 import Navbar from '../Navbar'
 import ThemeContext from '../../context/ThemeContext'
 import './index.css'
@@ -27,7 +26,7 @@ const NotFound = () => {
             <div className="home-sec">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/not-found-img.png"
-                alt="notfound"
+                alt="not found"
                 className="home"
               />
               <h1 className={theme.fontColor}> Lost your way </h1>

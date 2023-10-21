@@ -40,4 +40,11 @@
 .nav-image {
   width: 80px;
   height: 80px;
+  cursor: pointer;
+}
+
+.theme-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

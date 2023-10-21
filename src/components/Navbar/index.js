@@ -33,7 +33,7 @@ const Navbar = () => {
         const theme = isDarkTheme ? darkTheme : lightTheme
 
         const onChangeTheme = () => {
-          console.log('toggle triggered')
+          // console.log('toggle triggered')
           toggleTheme()
         }
 
@@ -53,12 +53,15 @@ const Navbar = () => {
                 <li> About </li>
               </Link>
             </ul>
-            <img
-              src={theme.themeImage}
-              alt="theme-change-icon"
-              className="theme-icon nav-image"
-              onClick={onChangeTheme}
-            />
+            <button className="theme-button" type="button" data-testid="theme">
+              {' '}
+              <img
+                src={theme.themeImage}
+                alt="theme"
+                className="theme-icon nav-image"
+                onClick={onChangeTheme}
+              />{' '}
+            </button>
           </div>
         )
       }}

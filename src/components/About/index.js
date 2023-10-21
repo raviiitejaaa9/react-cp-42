@@ -27,7 +27,7 @@ const About = () => {
           <div className={`home-container ${theme.homeBg} `}>
             <Navbar />
             <div className="home-sec">
-              <img src={theme.homeIcon} alt="home logo" className="home" />
+              <img src={theme.homeIcon} alt="about" className="home" />
               <h1 className={theme.fontColor}> About </h1>
             </div>
           </div>
