@@ -53,13 +53,17 @@ const Navbar = () => {
                 <li> About </li>
               </Link>
             </ul>
-            <button className="theme-button" type="button" data-testid="theme">
+            <button
+              onClick={onChangeTheme}
+              className="theme-button"
+              type="button"
+              data-testid="theme"
+            >
               {' '}
               <img
                 src={theme.themeImage}
                 alt="theme"
                 className="theme-icon nav-image"
-                onClick={onChangeTheme}
               />{' '}
             </button>
           </div>
